@@ -1,0 +1,10 @@
+[project]
+name = "grover-project"
+version = "0.1.0"
+dependencies = [
+  "qiskit>=2.1.0",
+  "qiskit-ibm-runtime>=0.40.1",
+  "qiskit-aer>=0.17.0",
+  "numpy",
+  "pylatexenc"
+]
