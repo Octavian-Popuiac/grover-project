@@ -1,10 +1,21 @@
 [project]
 name = "grover-project"
 version = "0.1.0"
+description = "Grover Algorithm Implementation"
+requires-python = ">=3.10"
+
 dependencies = [
   "qiskit>=2.1.0",
   "qiskit-ibm-runtime>=0.40.1",
   "qiskit-aer>=0.17.0",
   "numpy",
-  "pylatexenc"
+  "pylatexenc",
+  "matplotlib",
 ]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["grover"]
